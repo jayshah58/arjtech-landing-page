@@ -1,66 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ARJTECH INC.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#f5f7fa; color:#333; }
-    header { background:#0a1a2a; padding:40px 20px; text-align:center; color:white; }
-    header h1 { margin:0; font-size:42px; }
-    header p { margin:10px 0 0; font-size:20px; opacity:0.9; }
+<meta charset="UTF-8">
+<title>ARJTECH INC.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; }
+  .hero {
+    background:linear-gradient(135deg,#0a1a2a,#1f4a72);
+    color:white; padding:100px 20px; text-align:center;
+  }
+  .hero h1 { font-size:48px; margin:0; }
+  .hero p { font-size:22px; margin-top:10px; opacity:0.9; }
 
-    .section { max-width:900px; margin:50px auto; padding:20px; }
-    .section h2 { font-size:28px; margin-bottom:10px; }
-    .section p { font-size:18px; line-height:1.6; }
+  .section { max-width:900px; margin:50px auto; padding:20px; }
+  .section h2 { font-size:30px; margin-bottom:10px; }
 
-    .services { display:flex; gap:20px; flex-wrap:wrap; margin-top:20px; }
-    .card {
-      background:white; padding:20px; border-radius:8px;
-      box-shadow:0 2px 6px rgba(0,0,0,0.1); flex:1; min-width:260px;
-    }
-    .card h3 { margin-top:0; }
-
-    footer {
-      margin-top:60px; background:#0a1a2a; color:white;
-      text-align:center; padding:20px;
-    }
-  </style>
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+  .card {
+    background:white; padding:25px; border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  }
+  footer { text-align:center; padding:20px; background:#0a1a2a; color:white; margin-top:60px; }
+</style>
 </head>
 
 <body>
 
-<header>
+<div class="hero">
   <h1>ARJTECH INC.</h1>
-  <p>Enterprise Network • Security • Cloud Architecture</p>
-</header>
-
-<div class="section">
-  <h2>About ARJTECH</h2>
-  <p>
-    ARJTECH delivers modern, secure, scalable network and cloud architecture for organizations
-    that cannot afford failure. With 15+ years of enterprise experience, we design and implement
-    infrastructure that is resilient, high‑performance, and aligned to business outcomes.
-  </p>
+  <p>Secure. Scalable. Enterprise Architecture.</p>
 </div>
 
 <div class="section">
-  <h2>Core Services</h2>
-
-  <div class="services">
+  <h2>What We Do</h2>
+  <div class="grid">
     <div class="card">
-      <h3>Network Architecture</h3>
-      <p>Datacenter modernization, multi‑site routing, SD‑WAN, BGP/OSPF, high‑availability design.</p>
+      <h3>Enterprise Networking</h3>
+      <p>High‑availability routing, datacenter modernization, SD‑WAN, multi‑site architecture.</p>
     </div>
-
     <div class="card">
-      <h3>Security Engineering</h3>
-      <p>Firewall modernization (Cisco, Check Point, Fortinet), segmentation, Zero Trust, perimeter security.</p>
+      <h3>Security Architecture</h3>
+      <p>Firewall engineering, segmentation, Zero Trust, perimeter hardening, SOC integration.</p>
     </div>
-
     <div class="card">
-      <h3>Cloud Architecture</h3>
-      <p>Azure hybrid connectivity, landing zones, identity integration, secure cloud networking.</p>
+      <h3>Cloud Engineering</h3>
+      <p>Azure hybrid connectivity, landing zones, identity federation, secure cloud networking.</p>
     </div>
   </div>
 </div>
@@ -68,11 +53,10 @@
 <div class="section">
   <h2>Contact</h2>
   <p>Email: <strong>jay@jshah.com</strong></p>
-  <p>Location: Calgary Metropolitan Region</p>
 </div>
 
 <footer>
-  © 2026 ARJTECH INC. All Rights Reserved.
+  © 2026 ARJTECH INC.
 </footer>
 
 </body>
